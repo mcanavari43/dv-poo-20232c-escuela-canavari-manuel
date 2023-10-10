@@ -26,7 +26,7 @@ public class Asignacion {
             if (notas[i] != null) {
                 this.notas[i] = notas[i];
             } else {
-                System.out.println("Error de asignacion");
+                System.out.println("Error de asignación");
             }
         }
     }
@@ -73,7 +73,7 @@ public class Asignacion {
     public String toString() {
         return "Alumno: " + alumno + "\n" + "Materia: " + materia + "\n" + "Notas:" + mostrarNotas() +
 
-                "\nPromedio: " + calcularPromedio().toString().substring(0, 3) + "\n" + "Estado: " + getEstado() + "\n";
+                "\nPromedio: " + calcularPromedio().toString().substring(0, 3) + "\n" + "Estado: " + getEstado() + "\n-------------";
 
     }
 }

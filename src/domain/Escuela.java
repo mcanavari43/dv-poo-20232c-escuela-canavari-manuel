@@ -51,9 +51,4 @@ public class Escuela {
         }
     }
 
-
-    @Override
-    public String toString() {
-        return "Escuela{" + "asignaciones=" + Arrays.toString(asignaciones) + ", nombre='" + nombre + '\'' + '}';
-    }
 }

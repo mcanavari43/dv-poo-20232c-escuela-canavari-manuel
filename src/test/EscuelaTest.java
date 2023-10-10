@@ -10,9 +10,9 @@ public class EscuelaTest {
         Escuela escuela = new Escuela("Universidad de Lujan");
 
         // Crear materia
-        Materia materia1 = new Materia("Matemáticas", "2");
-        Materia materia2 = new Materia("Física", "1");
-        Materia materia3 = new Materia("Química", "3");
+        Materia materia1 = new Materia("Matemáticas", 2);
+        Materia materia2 = new Materia("Física", 1);
+        Materia materia3 = new Materia("Química", 3);
 
         //Crear alumno
         Alumno alumno1 = new Alumno("Manuel", 27);
@@ -53,7 +53,6 @@ public class EscuelaTest {
 
         // Mostrar asignaciones de la escuela
         escuela.getAsignaciones();
-
     }
 
 }

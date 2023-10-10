@@ -2,7 +2,7 @@
 'https://plantuml.com/class-diagram
 
 Asignacion --"1..*" Alumno
-Asignacion "*..*"--right Nota
+Asignacion "1..*"--right Nota
 Asignacion "1..*"-- Materia
 Escuela "1..*"-- Asignacion
 

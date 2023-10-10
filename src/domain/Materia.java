@@ -2,9 +2,9 @@ package domain;
 
 public class Materia {
     private String nombre;
-    private String cuatrimestre;
+    private Integer cuatrimestre;
 
-    public Materia(String nombre, String cuatrimestre) {
+    public Materia(String nombre, Integer cuatrimestre) {
         this.nombre = nombre;
         this.cuatrimestre = cuatrimestre;
     }
