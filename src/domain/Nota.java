@@ -7,7 +7,6 @@ public class Nota {
     public Nota(Double nota,String tipo) {
         this.nota = nota;
         this.tipo = tipo;
-
     }
 
     public Double getNota() {
@@ -18,6 +17,4 @@ public class Nota {
     public String toString() {
         return " " + tipo + " - " + nota;
     }
-
-
 }

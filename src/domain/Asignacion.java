@@ -9,6 +9,8 @@ public class Asignacion {
 
     // Constructor con valor de nota constante
     public Asignacion(Alumno alumno, Materia materia) {
+
+        
         this.alumno = alumno;
         this.materia = materia;
         this.notas = new Nota[CANTIDAD_NOTAS];
@@ -30,18 +32,22 @@ public class Asignacion {
             }
         }
     }
-
+/*
+* Recomendacion:
+*               En el metodo calcularPromedio() siempre se va a dividir por 3 notas , pero en caso
+*               de que se ingresen solo dos notas y tenga un valor null, mi promedio va a continuar dividiendo
+*               por 3.
+*               Lo haria de la siguiente forma, validando que mis notas no sean valor null , y sumar
+*               un contador mediante las notas que cumplan la condicion y luego dividir por mi contador
+*               que si se ingresan solo 2 notas se van a promediar por eso mismo.
+*
+**/
     public Double calcularPromedio() {
         Double suma = 0D;
-        int contador = 0;
         for (Nota nota : notas) {
             if (nota != null && nota.getNota() != null) {
                 suma += nota.getNota();
-                contador++;
             }
-        }
-        if (contador == 0) {
-            return null;
         }
         return suma / notas.length;
     }
@@ -74,6 +80,5 @@ public class Asignacion {
         return "Alumno: " + alumno + "\n" + "Materia: " + materia + "\n" + "Notas:" + mostrarNotas() +
 
                 "\nPromedio: " + calcularPromedio().toString().substring(0, 3) + "\n" + "Estado: " + getEstado() + "\n-------------";
-
     }
 }

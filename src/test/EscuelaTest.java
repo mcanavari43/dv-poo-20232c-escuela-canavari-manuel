@@ -28,7 +28,7 @@ public class EscuelaTest {
         Asignacion asignacion6 = new Asignacion(alumno3, materia2);
 
         //Crear notas de alumnno
-        Nota[] alumno1Materia2 = {new Nota(10D, "Primer Parcial"), new Nota(7.5, "Segundo Parcial"), new Nota(8.50, "Tp")};
+        Nota[] alumno1Materia2 = {new Nota(10D, "Primer Parcial"), new Nota(7.5, "Segundo Parcial")};
         Nota[] alumno1Materia3 = {new Nota(7.0, "Primer Parcial"), new Nota(4.5, "Segundo Parcial"), new Nota(9.5, "Tp")};
         Nota[] alumno2Materia1 = {new Nota(5.25, "Primer Parcial"), new Nota(9.5, "Segundo Parcial"), new Nota(10D, "Tp")};
         Nota[] alumno2Materia3 = {new Nota(4.75, "Primer Parcial"), new Nota(10D, "Segundo Parcial"), new Nota(9.25, "Tp")};
