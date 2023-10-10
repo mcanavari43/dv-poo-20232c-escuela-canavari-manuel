@@ -1,0 +1,46 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+Asignacion --"1..*" Alumno
+Asignacion "*..*"--right Nota
+Asignacion "1..*"-- Materia
+Escuela "1..*"-- Asignacion
+
+
+class Materia{
+    String name
+    Integer cuatrimestre
+    getMateria()
+}
+
+class Alumno{
+    String name
+    Integer edad
+    getAlumno()
+}
+
+class Nota {
+    Double nota
+    getNota()
+}
+
+class Asignacion{
+    Alumno alumno
+    Materia materia
+    Nota[] nota
+    setNota()
+    calcularPromedio()
+    obtenerEstado()
+}
+
+class Escuela{
+    String nombre;
+    Asignacion[] asignaciones;
+    addAsignacion()
+    getAsignaciones()
+    }
+}
+
+
+
+@enduml
